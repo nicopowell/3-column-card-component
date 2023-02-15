@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* font-family: 'Big Shoulders Display', cursive;
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f2f2f2;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+article {
+  width: 90%;
+  max-width: 305px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  justify-content: space-between;
+}
+
+.sedans {
+  background: #e38826;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.suvs {
+  background: #006970;
+}
+
+.luxury {
+  background: #004241;
+  border-radius: 0 1rem 1rem 0;
+}
+
+img {
+  width: 64px;
+  height: 40px;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+p {
+  color: #ffffff80;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 4rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  align-self: baseline;
+  border: none;
+  font-size: 15px;
+  border: 3px solid #f2f2f2;
+}
+
+#sedanButton {
+  color: #e38826;
+}
+
+#suvButton {
+  color: #006970;
+}
+
+#luxuryButton {
+  color: #004241;
+}
+
+#sedanButton:active {
+  background: #e38826;
+  color: #f2f2f2;
+}
+
+#suvButton:active {
+  background: #006970;
+  color: #f2f2f2;
+}
+
+#luxuryButton:active {
+  background: #004241;
+  color: #f2f2f2;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 576px) {
+  main {
+    padding: 3rem 0;
+  }
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    height: 400px;
+  }
+
+  .sedans {
+    background: #e38826;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .suvs {
+    background: #006970;
+  }
+
+  .luxury {
+    background: #004241;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  button {
+    margin-top: 0rem;
+  }
+}
